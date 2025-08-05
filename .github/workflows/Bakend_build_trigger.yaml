@@ -1,4 +1,4 @@
-name: Deploy Infra RemoteBackend
+name: Deploy Infra-RemoteBackend
 
 on:
   push:
