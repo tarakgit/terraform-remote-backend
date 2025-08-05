@@ -1,4 +1,4 @@
-name: Terraform CI/CD
+name: Deploy Infra RemoteBackend
 
 on:
   push:
