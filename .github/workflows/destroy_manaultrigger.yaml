@@ -14,6 +14,11 @@ jobs:
       AWS_REGION: ${{ secrets.AWS_REGION }}
 
     steps:
+      - name: Download Terraform State  #Download the tfsate file
+        uses: actions/download-artifact@v3
+        with:
+             name: tfstate   # 👈 must match the name used in upload
+             
       - name: Checkout repo
         uses: actions/checkout@v3
 
