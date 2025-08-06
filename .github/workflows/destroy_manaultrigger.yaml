@@ -15,7 +15,7 @@ jobs:
 
     steps:
       - name: Download Terraform State  #Download the tfsate file
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
              name: tfstate   # 👈 must match the name used in upload
              
