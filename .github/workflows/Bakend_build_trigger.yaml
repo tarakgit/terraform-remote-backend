@@ -40,7 +40,7 @@ jobs:
         if: github.ref == 'refs/heads/main'
         run: terraform apply -auto-approve tfplan.out
 
-        # ✅ Upload the Terraform state file as an artifact
+        # ✅ Upload the Terraform state file as an artifact 
       - name: Upload Terraform State
         if: github.ref == 'refs/heads/main'
         uses: actions/upload-artifact@v3
